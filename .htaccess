@@ -1,4 +1,6 @@
 RewriteEngine On
 RewriteCond %{THE_REQUEST} /index\.html [NC]
 RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+Redirect 301 /parking.php https://www.myhotslots.com/
+Redirect 301 /caf/ https://www.myhotslots.com/
 DirectoryIndex index.html
