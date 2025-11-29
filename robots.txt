@@ -1,0 +1,25 @@
+# MyHotSlots.com Robots.txt
+# Updated: November 17, 2025
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow admin/backend areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://myhotslots.com/sitemap.xml
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
