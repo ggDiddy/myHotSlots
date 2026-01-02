@@ -358,7 +358,7 @@ function getModalContent(type) {
             <h3>5. Limitation of Liability</h3>
             <p>MyHotSlots is not responsible for any losses incurred from gambling activities. Please gamble responsibly.</p>
             
-            <p><em>Last updated: November 14, 2025</em></p>
+            <p><em>Last updated: January 3, 2026</em></p>
         `,
         'privacy': `
             <h2>Privacy Policy</h2>
@@ -380,7 +380,7 @@ function getModalContent(type) {
             <h3>6. Contact Us</h3>
             <p>For privacy concerns, please contact us through our contact form.</p>
             
-            <p><em>Last updated: November 14, 2025</em></p>
+            <p><em>Last updated: January 3, 2026</em></p>
         `,
         'responsible': `
             <h2>Responsible Gambling</h2>
