@@ -1,5 +1,5 @@
 # MyHotSlots.com Robots.txt
-# Updated: November 17, 2025
+# Updated: January 2, 2026
 
 User-agent: *
 Allow: /
