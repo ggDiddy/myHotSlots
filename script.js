@@ -172,6 +172,7 @@ function claimBonus(casinoName, bonusCode) {
         'Gamblingo': 'https://www.gamblingo.com',
         'Tooniebet': 'https://tooniebet.com',
         'Boho': 'https://www.bohocasino.com',
+        'MyStake': 'https://go.affiliatemystake.com/visit/?bta=3167844&nci=5373',
     };
     
     // Show bonus code reminder
