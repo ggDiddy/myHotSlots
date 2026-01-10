@@ -173,6 +173,7 @@ function claimBonus(casinoName, bonusCode) {
         'Tooniebet': 'https://tooniebet.com',
         'Boho': 'https://www.bohocasino.com',
         'MyStake': 'https://go.affiliatemystake.com/visit/?bta=3167844&nci=5373',
+        'BC.GAME': 'https://partnerbcgame.com/vjwaob2t9'
     };
     
     // Show bonus code reminder
