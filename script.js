@@ -175,6 +175,7 @@ function claimBonus(casinoName, bonusCode) {
         'MyStake': 'https://go.affiliatemystake.com/visit/?bta=3167844&nci=5373',
         'BC.GAME': 'https://partnerbcgame.com/vjwaob2t9',
         'Casina': 'https://csna.fynkelto.com/?mid=347807_2010079',
+        'Martin': 'https://martin-route-six.com/c2f87836b',
 
     };
     
@@ -362,7 +363,7 @@ function getModalContent(type) {
             <h3>5. Limitation of Liability</h3>
             <p>MyHotSlots is not responsible for any losses incurred from gambling activities. Please gamble responsibly.</p>
             
-            <p><em>Last updated: January 3, 2026</em></p>
+            <p><em>Last updated: January 14, 2026</em></p>
         `,
         'privacy': `
             <h2>Privacy Policy</h2>
@@ -384,7 +385,7 @@ function getModalContent(type) {
             <h3>6. Contact Us</h3>
             <p>For privacy concerns, please contact us through our contact form.</p>
             
-            <p><em>Last updated: January 3, 2026</em></p>
+            <p><em>Last updated: January 14, 2026</em></p>
         `,
         'responsible': `
             <h2>Responsible Gambling</h2>
