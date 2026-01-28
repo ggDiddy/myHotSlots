@@ -1,0 +1,16 @@
+# .htaccess fails
+
+Redirect 301 /casino-reviews/ https://myhotslots.com/reviews/
+
+# Bonus kategoriju redirects
+Redirect 301 /bonuses/no-deposit/ https://myhotslots.com/bonuses/
+Redirect 301 /bonuses/free-spins/ https://myhotslots.com/bonuses/
+
+# Blog un News redirect
+Redirect 301 /blog/ https://myhotslots.com/news/news.html
+
+# Footer lapas - izveidot šīs lapas vai redirect
+Redirect 301 /about/ https://myhotslots.com/
+Redirect 301 /contact/ https://myhotslots.com/
+Redirect 301 /privacy-policy/ https://myhotslots.com/
+Redirect 301 /terms-and-conditions/ https://myhotslots.com/

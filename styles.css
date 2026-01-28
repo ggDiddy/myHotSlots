@@ -1130,17 +1130,20 @@ section {
 
 .news {
     margin: 0 auto;
+
 }
 
 .news-box {
     display: flex;
-    flex: 1;
+    flex-direction: column;
 }
 
 .news-grid{
     display: flex;
     flex-direction: column;
 }
+
+
 
 /* Animations */
 @keyframes fadeInUp {
