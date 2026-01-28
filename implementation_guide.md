@@ -1,4 +1,5 @@
 # 🚀 SEO Optimizācijas Ieviešanas Instrukcija
+
 ## MyHotSlots.com - Pilnīga Rokasgrāmata
 
 **Versija:** 1.0  
@@ -29,20 +30,24 @@
 Šī instrukcija palīdzēs jums ieviest visus SEO uzlabojumus, kas identificēti tehniskajā SEO analīzē. Procesa laikā tiks atrisinātas šādas galvenās problēmas:
 
 ### 🔴 Kritiskās problēmas (Prioritāte: AUGSTA)
+
 - ✅ 404 kļūdas (2 lapas) - Failed validation
 - ✅ Trūkstošo lapu izveide vai 301 redirects
 
 ### 🟠 Vidējas prioritātes problēmas
+
 - ✅ Redirect kļūdas (trailing slash)
 - ✅ Trūkstošie robots meta tagi
 - ✅ Trūkstošie Open Graph tagi
 
 ### 🟡 Optimizācijas uzlabojumi
+
 - ✅ Canonical tag konsistence
 - ✅ Structured data (Schema.org)
 - ✅ Profesionāla 404 lapa
 
 ### Sagaidāmie rezultāti:
+
 - 📈 Indeksēto lapu skaits: no 8 → 15+
 - 📈 404 kļūdu novēršana: 100%
 - 📈 Organiskā trafika pieaugums: +30-50% (3-6 mēneši)
@@ -103,6 +108,7 @@ myhotslots_fixes/
 ## 🤖 1. Solis: robots.txt Ieviešana {#1-solis-robotstxt}
 
 ### Kas ir robots.txt?
+
 Fails, kas norāda meklētājprogrammām (Google, Bing), kuras lapas drīkst vai nedrīkst indeksēt.
 
 ### Ieviešanas soļi:
@@ -115,15 +121,18 @@ https://myhotslots.com/robots.txt
 ```
 
 **Ja fails eksistē:**
+
 - Izveidojiet backup: `robots_OLD.txt`
 - Lejupielādējiet uz datoru
 
 **Ja fails neeksistē:**
+
 - Turpiniet ar nākamo soli
 
 #### 1.2. Augšupielādējiet jauno robots.txt
 
 **Via FTP/SFTP:**
+
 ```
 1. Savienojieties ar serveri caur FTP
 2. Navigējiet uz saknes direktoriju:
@@ -135,6 +144,7 @@ https://myhotslots.com/robots.txt
 ```
 
 **Via cPanel File Manager:**
+
 ```
 1. Ielogojieties cPanel
 2. Atveriet "File Manager"
@@ -178,6 +188,7 @@ https://myhotslots.com/robots.txt
 ## 🗺️ 2. Solis: sitemap.xml Ieviešana {#2-solis-sitemapxml}
 
 ### Kas ir sitemap.xml?
+
 XML fails, kas satur visas jūsu vietnes lapas un palīdz Google tās atrast un indeksēt.
 
 ### Ieviešanas soļi:
@@ -189,6 +200,7 @@ Atveriet `sitemap.xml` failā un:
 **A. Pievienojiet VISAS casino atsauksmes lapas**
 
 Template:
+
 ```xml
 <url>
     <loc>https://myhotslots.com/reviews/CASINO-NAME.html</loc>
@@ -201,6 +213,7 @@ Template:
 **B. Atjauniniet <lastmod> datumus**
 
 Visām lapām, kuras esat rediģējis:
+
 ```xml
 <lastmod>2026-01-28</lastmod>  <!-- Šodienas datums -->
 ```
@@ -225,6 +238,7 @@ Noklikšķiniet "Validate"
 #### 2.3. Augšupielādējiet sitemap.xml
 
 **Via FTP:**
+
 ```
 1. Savienojieties ar serveri
 2. Navigējiet uz saknes direktoriju (public_html/)
@@ -278,19 +292,21 @@ Status jābūt: "Success" ✅
 ## 🏷️ 3. Solis: Meta Tagu Pievienošana {#3-solis-meta-tagi}
 
 ### Kas ir meta tagi?
+
 HTML elementi `<head>` sekcijā, kas sniedz informāciju meklētājprogrammām un sociālajiem tīkliem.
 
 ### Trūkstošie meta tagi jūsu vietnē:
 
 ❌ **Robots meta tag** - Trūkst vairākām lapām  
 ❌ **Open Graph tags** - Trūkst sociālo tīklu share  
-❌ **Twitter Card tags** - Trūkst Twitter preview  
+❌ **Twitter Card tags** - Trūkst Twitter preview
 
 ### Ieviešanas soļi:
 
 #### 3.1. Identificējiet lapas, kurām trūkst meta tagu
 
 Pārbaudiet šīs lapas:
+
 ```
 https://myhotslots.com/reviews/ v
 https://myhotslots.com/casinos/ v
@@ -309,40 +325,62 @@ https://myhotslots.com/news/news.html
 
 ```html
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title tag -->
-    <title>Casino Reviews 2026 - Expert Reviews & Ratings | MyHotSlots</title>
-    
-    <!-- Meta description -->
-    <meta name="description" content="Expert casino reviews for USA & Canada players. Detailed analysis of bonuses, games, payouts, and licensing. Read honest ratings and player feedback.">
-    
-    <!-- Robots tag -->
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://myhotslots.com/reviews/">
-    
-    <!-- Open Graph tags -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Casino Reviews 2026 | MyHotSlots">
-    <meta property="og:description" content="Expert casino reviews for USA & Canada players with detailed analysis and ratings.">
-    <meta property="og:url" content="https://myhotslots.com/reviews/">
-    <meta property="og:site_name" content="MyHotSlots">
-    <meta property="og:image" content="https://www.shutterstock.com/image-illustration/casino-banner-advertising-modern-design-600nw-2237993729.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    
-    <!-- Twitter Card tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Casino Reviews 2026 | MyHotSlots">
-    <meta name="twitter:description" content="Expert casino reviews for USA & Canada players.">
-    <meta name="twitter:image" content="https://pbs.twimg.com/media/G_D2qhUWoAAhjJ5.jpg">
-    
-    <!-- Sitemap link -->
-    <link rel="sitemap" type="application/xml" href="https://myhotslots.com/sitemap.xml">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title tag -->
+  <title>Casino Reviews 2026 - Expert Reviews & Ratings | MyHotSlots</title>
+
+  <!-- Meta description -->
+  <meta
+    name="description"
+    content="Expert casino reviews for USA & Canada players. Detailed analysis of bonuses, games, payouts, and licensing. Read honest ratings and player feedback."
+  />
+
+  <!-- Robots tag -->
+  <meta
+    name="robots"
+    content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+  />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://myhotslots.com/reviews/" />
+
+  <!-- Open Graph tags -->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Casino Reviews 2026 | MyHotSlots" />
+  <meta
+    property="og:description"
+    content="Expert casino reviews for USA & Canada players with detailed analysis and ratings."
+  />
+  <meta property="og:url" content="https://myhotslots.com/reviews/" />
+  <meta property="og:site_name" content="MyHotSlots" />
+  <meta
+    property="og:image"
+    content="https://www.shutterstock.com/image-illustration/casino-banner-advertising-modern-design-600nw-2237993729.jpg"
+  />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Casino Reviews 2026 | MyHotSlots" />
+  <meta
+    name="twitter:description"
+    content="Expert casino reviews for USA & Canada players."
+  />
+  <meta
+    name="twitter:image"
+    content="https://pbs.twimg.com/media/G_D2qhUWoAAhjJ5.jpg"
+  />
+
+  <!-- Sitemap link -->
+  <link
+    rel="sitemap"
+    type="application/xml"
+    href="https://myhotslots.com/sitemap.xml"
+  />
 </head>
 ```
 
@@ -350,12 +388,12 @@ https://myhotslots.com/news/news.html
 
 **AIZSTĀJIET:**
 
-| Placeholder | Piemērs |
-|-------------|---------|
-| `[LAPAS NOSAUKUMS]` | Casino Reviews 2026 - Expert Reviews |
-| `[LAPAS APRAKSTS]` | Expert casino reviews for USA & Canada players... |
-| `[LAPAS-URL]` | reviews/ |
-| `[OG-IMAGE]` | https://lh4.googleusercontent.com/nkRZQP7EeB7K6fbhAY77Q1RxfyEnTePrnB01fPmb3mlSw1DUTV0p1O0eJ-wRRg_3vG01zCNpz-enjRprwozMAeMXyPyRVSzyTC0ZyRRn5qIvmy3w3T5EtO1GzDThcFvik7IRqz28Iad_T6N61DvjK2U |
+| Placeholder         | Piemērs                                                                                                                                                                                   |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[LAPAS NOSAUKUMS]` | Casino Reviews 2026 - Expert Reviews                                                                                                                                                      |
+| `[LAPAS APRAKSTS]`  | Expert casino reviews for USA & Canada players...                                                                                                                                         |
+| `[LAPAS-URL]`       | reviews/                                                                                                                                                                                  |
+| `[OG-IMAGE]`        | https://lh4.googleusercontent.com/nkRZQP7EeB7K6fbhAY77Q1RxfyEnTePrnB01fPmb3mlSw1DUTV0p1O0eJ-wRRg_3vG01zCNpz-enjRprwozMAeMXyPyRVSzyTC0ZyRRn5qIvmy3w3T5EtO1GzDThcFvik7IRqz28Iad_T6N61DvjK2U |
 
 #### 3.5. Augšupielādējiet atjauninātās lapas
 
@@ -380,6 +418,7 @@ https://myhotslots.com/news/news.html
 ```
 
 **Testējiet Open Graph:**
+
 ```
 Facebook Sharing Debugger:
 https://developers.facebook.com/tools/debug/
@@ -390,6 +429,7 @@ Noklikšķiniet "Debug"
 ```
 
 **Testējiet Twitter Card:**
+
 ```
 Twitter Card Validator:
 https://cards-dev.twitter.com/validator
@@ -413,6 +453,7 @@ Ievadiet URL: https://myhotslots.com/reviews/
 ## 🔀 4. Solis: .htaccess Redirect Iestatīšana {#4-solis-htaccess}
 
 ### Kas ir .htaccess?
+
 Apache servera konfigurācijas fails, kas kontrolē URL redirects, caching, un drošību.
 
 ### ⚠️ SVARĪGI: Šis solis ir TIKAI Apache serveriem!
@@ -461,6 +502,7 @@ Atveriet `.htaccess` failā un pārbaudiet/pielāgojiet:
 **A. WWW vs NON-WWW izvēle**
 
 Pašreizējā konfigurācija: BEZ www (ieteicams)
+
 ```apache
 # Noņemt www
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
@@ -472,6 +514,7 @@ Ja vēlaties ar www, atkomentējiet OPCIJA B sekciju.
 **B. Pārbaudiet redirect URL**
 
 Pārliecinieties, ka visi redirect URL ir pareizi:
+
 ```apache
 Redirect 301 /blog/ https://myhotslots.com/news/news.html
 ```
@@ -517,6 +560,7 @@ https://myhotslots.com/blog/
 ```
 
 **Izmantojiet Redirect Checker Tool:**
+
 ```
 https://httpstatus.io/
 
@@ -532,6 +576,7 @@ Ievadiet URL: https://myhotslots.com/blog/
 ❌ **500 Internal Server Error**
 
 Risinājums:
+
 1. Atjaunojiet backup .htaccess
 2. Pārbaudiet syntax kļūdas
 3. Komentējiet problēmatikas sekcijas ar #
@@ -540,6 +585,7 @@ Risinājums:
 ❌ **Redirects nedarbojas**
 
 Risinājums:
+
 1. Pārbaudiet, vai mod_rewrite ir ieslēgts serverī
 2. Pārbaudiet, vai AllowOverride ir On
 3. Notīriet pārlūkprogrammas cache (Ctrl+Shift+Del)
@@ -560,6 +606,7 @@ Risinājums:
 ## 📊 5. Solis: Structured Data Pievienošana {#5-solis-structured-data}
 
 ### Kas ir Structured Data (Schema.org)?
+
 JSON-LD kods, kas palīdz Google labāk saprast jūsu saturu un var rezultēties Rich Snippets (rating stars, FAQ, etc.).
 
 ### Ieviešanas soļi:
@@ -578,64 +625,66 @@ JSON-LD kods, kas palīdz Google labāk saprast jūsu saturu un var rezultēties
 
 #### 5.2. Izvēlieties pareizo schema tipu katrai lapai
 
-| Lapas tips | Ieteicamā schema |
-|------------|------------------|
-| Casino atsauksme | Review + Organization + Breadcrumb + FAQ |
-| Reviews direktorijs | ItemList + Organization |
-| Sākumlapa | WebSite + Organization |
-| Bonusu lapa | Offer + Organization |
-| Ziņu raksts | Article + Organization |
+| Lapas tips          | Ieteicamā schema                         |
+| ------------------- | ---------------------------------------- |
+| Casino atsauksme    | Review + Organization + Breadcrumb + FAQ |
+| Reviews direktorijs | ItemList + Organization                  |
+| Sākumlapa           | WebSite + Organization                   |
+| Bonusu lapa         | Offer + Organization                     |
+| Ziņu raksts         | Article + Organization                   |
 
 #### 5.3. Kopējiet un pielāgojiet JSON-LD
+
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
 **PIEMĒRS - Green Luck Casino atsauksme:**
 
 ```html
 <head>
-    <!-- Citi meta tagi -->
-    
-    <!-- Review Schema -->
-    <script type="application/ld+json">
+  <!-- Citi meta tagi -->
+
+  <!-- Review Schema -->
+  <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "Review",
-        "itemReviewed": {
-            "@type": "Organization",
-            "name": "Green Luck Casino",
-            "url": "https://greenluck.com"
-        },
-        "author": {
-            "@type": "Organization",
-            "name": "MyHotSlots"
-        },
-        "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "worstRating": "1"
-        },
-        "datePublished": "2026-01-03",
-        "reviewBody": "Green Luck Casino excels with industry-lowest 1x wagering..."
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Organization",
+        "name": "Green Luck Casino",
+        "url": "https://greenluck.com"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "MyHotSlots"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "datePublished": "2026-01-03",
+      "reviewBody": "Green Luck Casino excels with industry-lowest 1x wagering..."
     }
-    </script>
-    
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Is Green Luck Casino licensed?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, licensed by Malta Gaming Authority..."
-                }
-            }
-        ]
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Green Luck Casino licensed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, licensed by Malta Gaming Authority..."
+          }
+        }
+      ]
     }
-    </script>
+  </script>
 </head>
 ```
 
@@ -665,6 +714,7 @@ JSON-LD kods, kas palīdz Google labāk saprast jūsu saturu un var rezultēties
 #### 5.6. Validējiet Structured Data
 
 **Google Rich Results Test:**
+
 ```
 https://search.google.com/test/rich-results
 
@@ -678,6 +728,7 @@ https://search.google.com/test/rich-results
 ```
 
 **Schema.org Validator:**
+
 ```
 https://validator.schema.org/
 
@@ -689,6 +740,7 @@ https://validator.schema.org/
 #### 5.7. Testējiet katru lapas tipu
 
 Pārbaudiet structured data VISĀM lapām ar dažādiem schema tipiem:
+
 - ✅ Casino atsauksmes (Review schema)
 - ✅ Bonusu lapas (Offer schema)
 - ✅ FAQ lapas (FAQPage schema)
@@ -710,6 +762,7 @@ Pārbaudiet structured data VISĀM lapām ar dažādiem schema tipiem:
 ## 🚫 6. Solis: 404 Lapas Iestatīšana {#6-solis-404-lapa}
 
 ### Kas ir 404 lapa?
+
 Lapa, ko lietotājs redz, kad mēģina piekļūt neeksistējošam URL.
 
 ### Ieviešanas soļi:
@@ -717,6 +770,7 @@ Lapa, ko lietotājs redz, kad mēģina piekļūt neeksistējošam URL.
 #### 6.1. Pielāgojiet 404.html (optional)
 
 Ja vēlaties mainīt:
+
 - Logo
 - Krāsas
 - Saites
@@ -735,11 +789,13 @@ Via FTP:
 #### 6.3. Konfigurējiet serveri rādīt 404.html
 
 **.htaccess failā (jau iekļauts):**
+
 ```apache
 ErrorDocument 404 /404.html
 ```
 
 **Nginx serveriem:**
+
 ```nginx
 error_page 404 /404.html;
 
@@ -761,6 +817,7 @@ https://myhotslots.com/test-404
 ```
 
 **Pārbaudiet HTTP status code:**
+
 ```
 Atveriet Developer Tools (F12)
 → Network tab
@@ -793,6 +850,7 @@ Atveriet Developer Tools (F12)
 ## ✅ 7. Solis: Google Search Console Validācija {#7-solis-gsc-validācija}
 
 ### Kāpēc validācija ir kritiski svarīga?
+
 Google atkārtoti pārbaudīs labojumus un atjauninās indeksāciju tikai pēc validācijas.
 
 ### Ieviešanas soļi:
@@ -873,6 +931,7 @@ Saņemsiet alertus par:
 #### ✅ Tehniskā testēšana
 
 **1. robots.txt**
+
 ```
 URL: https://myhotslots.com/robots.txt
 ✅ Atgriež 200 OK
@@ -881,6 +940,7 @@ URL: https://myhotslots.com/robots.txt
 ```
 
 **2. sitemap.xml**
+
 ```
 URL: https://myhotslots.com/sitemap.xml
 ✅ Atgriež 200 OK
@@ -889,6 +949,7 @@ URL: https://myhotslots.com/sitemap.xml
 ```
 
 **3. Meta tagi**
+
 ```
 Pārbaudiet katru lapu:
 ✅ Title tag klāt
@@ -899,6 +960,7 @@ Pārbaudiet katru lapu:
 ```
 
 **4. 301 Redirects**
+
 ```
 Testējiet visus redirects:
 ✅ HTTP → HTTPS
@@ -908,6 +970,7 @@ Testējiet visus redirects:
 ```
 
 **5. Structured Data**
+
 ```
 Google Rich Results Test:
 ✅ Visas lapas ir eligible
@@ -916,6 +979,7 @@ Google Rich Results Test:
 ```
 
 **6. 404 lapa**
+
 ```
 Testējiet neeksistējošu URL:
 ✅ Parādās custom 404 lapa
@@ -926,6 +990,7 @@ Testējiet neeksistējošu URL:
 #### ✅ SEO Tools testēšana
 
 **Google PageSpeed Insights:**
+
 ```
 https://pagespeed.web.dev/
 
@@ -940,6 +1005,7 @@ Mērķis:
 ```
 
 **Screaming Frog SEO Spider (Free tool):**
+
 ```
 https://www.screamingfrog.co.uk/
 
@@ -959,26 +1025,31 @@ https://www.screamingfrog.co.uk/
 ### 1. Cik ilgi aizņems, līdz redzēšu rezultātus?
 
 **Īstermiņā (1-2 nedēļas):**
+
 - 404 kļūdas izzudīs GSC
 - Jauni URL tiks indeksēti
 
 **Vidējā termiņā (1-2 mēneši):**
+
 - Indeksēto lapu skaits pieaugs
 - Rich snippets sāks parādīties
 
 **Ilgtermiņā (3-6 mēneši):**
+
 - Organiskais trafiks pieaugs 30-50%
 - Rankings uzlabosies
 
 ### 2. Vai man obligāti jāizmanto visi faili?
 
 **OBLIGĀTI:**
+
 - ✅ robots.txt
 - ✅ sitemap.xml
 - ✅ Meta tagi
 - ✅ .htaccess (301 redirects)
 
 **IETEICAMS:**
+
 - ⭐ Structured data
 - ⭐ 404 lapa
 
@@ -989,6 +1060,7 @@ WordPress ir CMS (Content Management System) ar atšķirīgu struktūru:
 **robots.txt:** WordPress automātiski ģenerē. Izmantojiet plugin "Yoast SEO" vai "All in One SEO" lai pielāgotu.
 
 **sitemap.xml:** Instalējiet plugin:
+
 - Yoast SEO (ieteicams)
 - Google XML Sitemaps
 - Rank Math
@@ -1030,6 +1102,7 @@ Meklējiet "Server:" headerī
 ✅ **Jā!** Visi faili ir neatkarīgi un var tikt iestatīti paralēli.
 
 **Ieteicamā secība (ja vēlaties pakāpeniski):**
+
 1. Backup + .htaccess redirects (kritiskākais)
 2. robots.txt + sitemap.xml
 3. Meta tagi
@@ -1041,16 +1114,19 @@ Meklējiet "Server:" headerī
 **robots.txt:** Retāk mainās. Atjauniniet, ja maina struktūru.
 
 **sitemap.xml:** Atjauniniet:
+
 - Pievienojot jaunas lapas
 - Dzēšot vecās lapas
 - Mainot satura struktūru
 
 **Meta tagi:** Atjauniniet:
+
 - Mainot lapas saturu
 - Optimizējot Click-Through Rate
 - A/B testējot descriptions
 
 **.htaccess:** Atjauniniet:
+
 - Pievienojot jaunus redirects
 - Mainot URL struktūru
 
@@ -1059,6 +1135,7 @@ Meklējiet "Server:" headerī
 ✅ **Tikai pozitīvi!**
 
 Šie labojumi:
+
 - Novērš tehniskās problēmas
 - Neizmaina esošo saturu
 - Uzlabo indeksāciju
@@ -1075,6 +1152,7 @@ Meklējiet "Server:" headerī
 **Cēlonis:** Syntax kļūda vai neatbalstīta direktīva
 
 **Risinājums:**
+
 1. Atjaunojiet backup .htaccess
 2. Pievienojiet jauno saturu pa daļām (sekcijām)
 3. Testējiet katru sekciju atsevišķi
@@ -1088,9 +1166,11 @@ Meklējiet "Server:" headerī
 ### ❌ Problēma: Redirects nedarbojas
 
 **Risinājums:**
+
 1. Notīriet pārlūkprogrammas cache (Ctrl+Shift+Del)
 2. Testējiet inkognito mode
 3. Pārbaudiet, vai mod_rewrite ir ieslēgts:
+
 ```
 Sazinieties ar hosting atbalstu:
 "Please verify mod_rewrite is enabled"
@@ -1099,6 +1179,7 @@ Sazinieties ar hosting atbalstu:
 ### ❌ Problēma: Sitemap nav redzams Google Search Console
 
 **Risinājums:**
+
 1. Pārbaudiet, vai sitemap.xml ir pieejams:
    ```
    https://myhotslots.com/sitemap.xml
@@ -1113,12 +1194,14 @@ Sazinieties ar hosting atbalstu:
 ### ❌ Problēma: Structured data validācija failed
 
 **Risinājums:**
+
 1. Pārbaudiet JSON sintaksi (visas komatas, iekavas)
 2. Pārliecinieties, ka visi required fields ir aizpildīti
 3. Pārbaudiet datumu formātu: YYYY-MM-DD
 4. URL jābūt absolute (ar https://)
 
 **Online JSON validator:**
+
 ```
 https://jsonlint.com/
 Kopējiet JSON-LD kodu un testējiet
@@ -1127,6 +1210,7 @@ Kopējiet JSON-LD kodu un testējiet
 ### ❌ Problēma: 404 lapa nerādās
 
 **Risinājums:**
+
 1. Pārbaudiet .htaccess:
    ```apache
    ErrorDocument 404 /404.html
@@ -1138,6 +1222,7 @@ Kopējiet JSON-LD kodu un testējiet
 ### ❌ Problēma: Meta tagi nerādās pārlūkprogrammā
 
 **Risinājums:**
+
 1. Notīriet cache (Ctrl+F5)
 2. Pārbaudiet HTML sintaksi (vai <head> tags ir aizvērts)
 3. Pārliecinieties, ka faila encoding ir UTF-8
@@ -1146,6 +1231,7 @@ Kopējiet JSON-LD kodu un testējiet
 ### ❌ Problēma: Caching nedarbojas
 
 **Risinājums:**
+
 1. Pārbaudiet, vai mod_expires ir ieslēgts serverī
 2. Testējiet ar GTmetrix vai PageSpeed Insights
 3. Pārbaudiet response headers:
@@ -1195,6 +1281,7 @@ Kopējiet JSON-LD kodu un testējiet
 Pēc visu soļu pabeigšanas, atzīmējiet:
 
 ### 📁 Failu ieviešana:
+
 - [ ] robots.txt augšupielādēts un testēts
 - [ ] sitemap.xml augšupielādēts un iesniegts GSC
 - [ ] Meta tagi pievienoti VISĀM lapām
@@ -1203,6 +1290,7 @@ Pēc visu soļu pabeigšanas, atzīmējiet:
 - [ ] 404.html augšupielādēts un testēts
 
 ### 🧪 Testēšana:
+
 - [ ] Visi 301 redirects darbojas
 - [ ] robots.txt pieejams online
 - [ ] sitemap.xml validēts un pieejams
@@ -1211,12 +1299,14 @@ Pēc visu soļu pabeigšanas, atzīmējiet:
 - [ ] 404 lapa parādās correct HTTP status
 
 ### 📊 Google Search Console:
+
 - [ ] Sitemap iesniegts
 - [ ] 404 kļūdas validētas
 - [ ] Jaunās lapas request indexing
 - [ ] Email alerts iestatīti
 
 ### 📈 Monitoring:
+
 - [ ] Ikmēneša GSC pārbaude iestatīta
 - [ ] Google Analytics tracking darbojas
 - [ ] Keyword ranking tracking (optional)
@@ -1226,21 +1316,25 @@ Pēc visu soļu pabeigšanas, atzīmējiet:
 ## 🎯 Nākamie Soļi Pēc Ieviešanas
 
 ### Nedēļa 1-2:
+
 - ⏰ Monitorējiet GSC daily
 - ⏰ Pārbaudiet, vai 404 kļūdas samazinās
 - ⏰ Verificējiet, ka jaunās lapas tiek indeksētas
 
 ### Mēnesis 1:
+
 - 📈 Analizējiet indeksēto lapu pieaugumu
 - 📈 Pārbaudiet, vai rich snippets parādās
 - 📈 Novērtējiet organic traffic izmaiņas
 
 ### Mēnesis 2-3:
+
 - 🚀 Optimizējiet meta descriptions (A/B testing)
 - 🚀 Pievienojiet vairāk structured data
 - 🚀 Izveidojiet vairāk quality content
 
 ### Mēnesis 4-6:
+
 - 🎊 Novērtējiet rezultātus
 - 🎊 Analizējiet keyword rankings
 - 🎊 Plānojiet nākamās SEO stratēģijas
@@ -1255,25 +1349,25 @@ Apsveicu! Pēc visu šo soļu izpildes, jūsu vietne myhotslots.com būs:
 ✅ **Google draudzīga** - Optimāla crawling un indexing  
 ✅ **Lietotājam draudzīga** - Profesionāla 404 lapa un skaidra navigācija  
 ✅ **Rich snippets ready** - Structured data visām galvenajām lapām  
-✅ **Performance optimized** - Caching un compression iestatīts  
+✅ **Performance optimized** - Caching un compression iestatīts
 
 ### Sagaidāmie rezultāti:
 
-| Metrika | Pašreizējais | Pēc 3 mēnešiem | Pēc 6 mēnešiem |
-|---------|--------------|----------------|----------------|
-| Indeksētas lapas | 8 | 15+ | 20+ |
-| 404 kļūdas | 2 | 0 | 0 |
-| Organic traffic | Baseline | +20-30% | +40-60% |
-| Rich snippets | 0 | 5-10 | 15+ |
+| Metrika          | Pašreizējais | Pēc 3 mēnešiem | Pēc 6 mēnešiem |
+| ---------------- | ------------ | -------------- | -------------- |
+| Indeksētas lapas | 8            | 15+            | 20+            |
+| 404 kļūdas       | 2            | 0              | 0              |
+| Organic traffic  | Baseline     | +20-30%        | +40-60%        |
+| Rich snippets    | 0            | 5-10           | 15+            |
 
 ---
 
 **Izveidoja:** DeepAgent SEO Sistēma  
 **Datums:** 2026. gada 28. janvāris  
-**Kontakts:** Ja jums ir jautājumi, sazinieties ar SEO speciālistu  
+**Kontakts:** Ja jums ir jautājumi, sazinieties ar SEO speciālistu
 
 **Veiksmi ar SEO optimizāciju! 🚀🎰**
 
 ---
 
-*Šī instrukcija ir izveidota specifiskai myhotslots.com vietnei, pamatojoties uz detalizētu SEO analīzi. Visi faili un ieteikumi ir testēti un atbilst Google 2026. gada best practices.*
+_Šī instrukcija ir izveidota specifiskai myhotslots.com vietnei, pamatojoties uz detalizētu SEO analīzi. Visi faili un ieteikumi ir testēti un atbilst Google 2026. gada best practices._
