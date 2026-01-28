@@ -292,10 +292,10 @@ HTML elementi `<head>` sekcijā, kas sniedz informāciju meklētājprogrammām u
 
 Pārbaudiet šīs lapas:
 ```
-https://myhotslots.com/reviews/
-https://myhotslots.com/casinos/
+https://myhotslots.com/reviews/ v
+https://myhotslots.com/casinos/ v
 https://myhotslots.com/reviews/green-luck-casino.html
-https://myhotslots.com/bonuses/
+https://myhotslots.com/bonuses/ v
 https://myhotslots.com/news/news.html
 ```
 
