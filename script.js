@@ -9,9 +9,58 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initAnimations();
     initModal();
+    initStickySidebar();
     
     console.log('MyHotSlots loaded successfully!');
 });
+
+// Sticky Sidebar Toggle
+function toggleSidebar() {
+    const sidebar = document.querySelector('.sticky-bonuses-sidebar');
+    if (sidebar) {
+        sidebar.classList.toggle('collapsed');
+    }
+}
+
+// Initialize Sticky Sidebar
+function initStickySidebar() {
+    const sidebar = document.querySelector('.sticky-bonuses-sidebar');
+    const bonusesSection = document.querySelector('.hot-bonuses');
+    const footer = document.querySelector('.footer');
+    
+    if (sidebar && bonusesSection) {
+        window.addEventListener('scroll', function() {
+            const bonusesSectionTop = bonusesSection.getBoundingClientRect().top;
+            const bonusesSectionBottom = bonusesSection.getBoundingClientRect().bottom;
+            const windowHeight = window.innerHeight;
+            
+            // Show sidebar when reaching bonuses section
+            if (bonusesSectionTop < windowHeight && bonusesSectionBottom > 0) {
+                sidebar.style.display = 'block';
+                setTimeout(() => {
+                    sidebar.style.opacity = '1';
+                    sidebar.style.transform = 'translateX(0)';
+                }, 10);
+            } else {
+                sidebar.style.opacity = '0';
+                sidebar.style.transform = 'translateX(100px)';
+                setTimeout(() => {
+                    if (sidebar.style.opacity === '0') {
+                        sidebar.style.display = 'none';
+                    }
+                }, 300);
+            }
+            
+            // Reduce opacity when reaching footer
+            if (footer) {
+                const footerTop = footer.getBoundingClientRect().top;
+                if (footerTop < windowHeight) {
+                    sidebar.style.opacity = '0.3';
+                }
+            }
+        });
+    }
+}
 
 
 
