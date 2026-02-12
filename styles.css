@@ -1302,9 +1302,16 @@ section {
 }
 
 
-.news {
+.news,
+.News {
     margin: 0 auto;
+    padding: 60px 0;
+}
 
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .news-box {
@@ -1312,9 +1319,10 @@ section {
     flex-direction: column;
 }
 
-.news-grid{
+.news-grid {
     display: flex;
     flex-direction: column;
+    gap: 12px;
 }
 
 
@@ -1381,6 +1389,10 @@ section {
     }
     
     .casino-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .news-container {
         grid-template-columns: 1fr;
     }
     
