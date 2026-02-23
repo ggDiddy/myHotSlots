@@ -15,11 +15,13 @@ Allow: /
 Crawl-delay: 1
 
 # ===========================================
-# BLOĶĒT DUBLIKĀTA SATURU
+# ATĻAUT SVARĪGUS FAILUS (pirms Disallow noteikumiem)
 # ===========================================
-# Bloķē /index.html versijas, lai izvairītos no dublēšanās
-Disallow: /index.html
-Disallow: /*/index.html
+Allow: /sitemap.xml
+Allow: /*.css
+Allow: /*.css?*
+Allow: /*.js
+Allow: /*.js?*
 
 # ===========================================
 # BLOĶĒT PRIVĀTĀS UN ADMIN ZONAS
@@ -31,13 +33,9 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 
 # ===========================================
-# BLOĶĒT MEKLĒŠANAS REZULTĀTUS UN PARAMETRUS
+# BLOĶĒT MEKLĒŠANAS REZULTĀTUS
 # ===========================================
-# Novērš meklēšanas rezultātu un URL parametru indeksāciju
 Disallow: /search
-Disallow: /*?*
-Disallow: /*&
-Disallow: /*.php$
 Disallow: /*?s=
 Disallow: /*&s=
 
@@ -46,14 +44,9 @@ Disallow: /*&s=
 # ===========================================
 # Aizsargā tehniskos un konfigurācijas failus
 Disallow: /*.json$
-Disallow: /*.xml$ 
 Disallow: /*.log$
 Disallow: /.htaccess
 Disallow: /.git/
-
-# Atļaut tikai galveno sitemap
-Allow: /sitemap.xml
-Allow: /sitemap-images.xml
 
 # ===========================================
 # GOOGLE BOT ĪPAŠIE NOTEIKUMI

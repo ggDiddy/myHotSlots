@@ -91,13 +91,15 @@ Redirect 301 /reviews https://myhotslots.com/reviews/
 # /casinos (bez slash) → /casinos/ (ar slash)
 Redirect 301 /casinos https://myhotslots.com/casinos/
 
-# /about (bez slash) → /about/ (ar slash)
-Redirect 301 /about https://myhotslots.com/about/
+# /about - redirect uz sākumlapu (lapa neeksistē)
+Redirect 301 /about https://myhotslots.com/
+Redirect 301 /about/ https://myhotslots.com/
 
-# /contact (bez slash) → /contact/ (ar slash)
-Redirect 301 /contact https://myhotslots.com/contact/
+# /contact - redirect uz contact sekciju (lapa neeksistē)
+Redirect 301 /contact https://myhotslots.com/#contact
+Redirect 301 /contact/ https://myhotslots.com/#contact
 
-# /news (bez slash) → /news/ (ar slash)
+# /news (bez slash) → /news/ (redirect uz news.html)
 # Redirect 301 /news https://myhotslots.com/news/
 
 # ============================================

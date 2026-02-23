@@ -1,13 +1,10 @@
 
-/* MyHotSlots Casino Affiliate Website Styles */
-/* Colors: Gradient from #e6dada to #274046 */
-
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -35,7 +32,7 @@ body {
     padding: 0 20px; 
 }
 
-/* Typography */
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;

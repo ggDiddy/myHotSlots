@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -65,7 +65,14 @@
     <link rel="canonical" href="https://myhotslots.com/news" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css" id="main-stylesheet" />
+    <script>
+      (function () {
+        var link = document.getElementById("main-stylesheet");
+        var href = link.href.split("?")[0];
+        link.href = href + "?v=" + new Date().getTime();
+      })();
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -343,8 +350,8 @@
 
             <footer class="article-footer">
               <p>
-                <strong>Tags:</strong> Betting, Gambling, Sports Betting, Trends,
-                2026, Gaming, Online Casino, Slot Machines
+                <strong>Tags:</strong> Betting, Gambling, Sports Betting,
+                Trends, 2026, Gaming, Online Casino, Slot Machines
               </p>
               <p>
                 <strong>Share this article:</strong>

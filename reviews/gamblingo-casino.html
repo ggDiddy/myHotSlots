@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,14 @@
       rel="canonical"
       href="https://myhotslots.com/reviews/gamblingo-casino.html"
     />
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../styles.css" id="main-stylesheet" />
+    <script>
+      (function () {
+        var link = document.getElementById("main-stylesheet");
+        var href = link.href.split("?")[0];
+        link.href = href + "?v=" + new Date().getTime();
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
