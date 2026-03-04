@@ -2,8 +2,8 @@
 <!-- ============================================ -->
 <!-- SITEMAP.XML - MYHOTSLOTS.COM -->
 <!-- ============================================ -->
-<!-- Pēdējā atjaunināšana: 2026-03-02 -->
-<!-- Kopējais lapu skaits: 15 -->
+<!-- Pēdējā atjaunināšana: 2026-03-04 -->
+<!-- Kopējais lapu skaits: 16 -->
 <!-- ============================================ -->
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -145,6 +145,17 @@
         <lastmod>2026-02-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://myhotslots.com/news/instant_usdt_casinos.html</loc>
+        <lastmod>2026-03-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://myhotslots.com/assets/crypto-casino.jpg</image:loc>
+            <image:title>Instant USDT Casinos - Fast Secure Gaming 2026</image:title>
+        </image:image>
     </url>
 
     <!-- ============================================ -->
