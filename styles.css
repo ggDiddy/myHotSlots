@@ -5,8 +5,10 @@
     box-sizing: border-box;
 }
 
-
+/* Show page when CSS loads (prevents FOUC) */
 html {
+  visibility: visible !important;
+  opacity: 1 !important;
   scroll-behavior: smooth;
 }
 

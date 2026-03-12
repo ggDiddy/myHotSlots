@@ -68,16 +68,16 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://myhotslots.com" />
 
-    <!-- CSS with cache busting -->
-    <link rel="stylesheet" href="./styles.css" id="main-stylesheet" />
-    <script>
-      // Force CSS reload on page load (prevents caching issues with live server)
-      (function () {
-        var link = document.getElementById("main-stylesheet");
-        var href = link.href.split("?")[0];
-        link.href = href + "?v=" + new Date().getTime();
-      })();
-    </script>
+    <!-- Prevent FOUC -->
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css?v=20260305" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -455,7 +455,7 @@
             >
           </div>
 
-          <div class="quick-pick-card">
+          <!-- <div class="quick-pick-card">
             <div class="casino-img">
               <img
                 src="./assets/mystake-logo.png"
@@ -485,7 +485,7 @@
               rel="noopener noreferrer"
               >Claim Bonus</a
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -495,7 +495,8 @@
       <div class="container">
         <h2 class="section-title">Best Online Casinos by Category</h2>
         <p class="section-subtitle">
-          Find the perfect casino for your needs - handpicked winners in every category
+          Find the perfect casino for your needs - handpicked winners in every
+          category
         </p>
 
         <div class="casino-categories">
@@ -504,40 +505,52 @@
               <h3><span class="category-icon">🇨🇦</span> Best Canada Casinos</h3>
               <div class="category-badge">Top 5</div>
             </div>
-            <p class="category-description">Interac deposits, CAD currency, high RTPs</p>
+            <p class="category-description">
+              Interac deposits, CAD currency, high RTPs
+            </p>
             <ul class="casino-list">
               <li class="casino-item">
                 <span class="rank">#1</span>
                 <div class="casino-info">
-                  <a href="./reviews/green-luck-casino.html" class="casino-name">Green Luck Casino</a>
+                  <a href="./reviews/green-luck-casino.html" class="casino-name"
+                    >Green Luck Casino</a
+                  >
                   <span class="casino-feature">98.64% RTP</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#2</span>
                 <div class="casino-info">
-                  <a href="./reviews/metal-casino.html" class="casino-name">Metal Casino</a>
+                  <a href="./reviews/metal-casino.html" class="casino-name"
+                    >Metal Casino</a
+                  >
                   <span class="casino-feature">Instant Interac</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#3</span>
                 <div class="casino-info">
-                  <a href="./reviews/gamblingo-casino.html" class="casino-name">Gamblingo Casino</a>
+                  <a href="./reviews/gamblingo-casino.html" class="casino-name"
+                    >Gamblingo Casino</a
+                  >
                   <span class="casino-feature">Fast withdrawals</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#4</span>
                 <div class="casino-info">
-                  <a href="./reviews/boho-casino.html" class="casino-name">Boho Casino</a>
+                  <a href="./reviews/boho-casino.html" class="casino-name"
+                    >Boho Casino</a
+                  >
                   <span class="casino-feature">Great bonuses</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#5</span>
                 <div class="casino-info">
-                  <a href="./reviews/betmgm-casino.html" class="casino-name">BetMGM Casino</a>
+                  <a href="./reviews/betmgm-casino.html" class="casino-name"
+                    >BetMGM Casino</a
+                  >
                   <span class="casino-feature">Licensed</span>
                 </div>
               </li>
@@ -552,40 +565,52 @@
               <h3><span class="category-icon">⚡</span> Fastest Payouts</h3>
               <div class="category-badge">Top 5</div>
             </div>
-            <p class="category-description">Get your winnings in hours, not days</p>
+            <p class="category-description">
+              Get your winnings in hours, not days
+            </p>
             <ul class="casino-list">
               <li class="casino-item">
                 <span class="rank">#1</span>
                 <div class="casino-info">
-                  <a href="./reviews/metal-casino.html" class="casino-name">Metal Casino</a>
+                  <a href="./reviews/metal-casino.html" class="casino-name"
+                    >Metal Casino</a
+                  >
                   <span class="casino-feature">24h PayPal</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#2</span>
                 <div class="casino-info">
-                  <a href="./reviews/green-luck-casino.html" class="casino-name">Green Luck Casino</a>
+                  <a href="./reviews/green-luck-casino.html" class="casino-name"
+                    >Green Luck Casino</a
+                  >
                   <span class="casino-feature">Instant Interac</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#3</span>
                 <div class="casino-info">
-                  <a href="./reviews/gamblingo-casino.html" class="casino-name">Gamblingo Casino</a>
+                  <a href="./reviews/gamblingo-casino.html" class="casino-name"
+                    >Gamblingo Casino</a
+                  >
                   <span class="casino-feature">Same day</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#4</span>
                 <div class="casino-info">
-                  <a href="./reviews/betmgm-casino.html" class="casino-name">BetMGM Casino</a>
+                  <a href="./reviews/betmgm-casino.html" class="casino-name"
+                    >BetMGM Casino</a
+                  >
                   <span class="casino-feature">24-48h</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#5</span>
                 <div class="casino-info">
-                  <a href="./reviews/boho-casino.html" class="casino-name">Boho Casino</a>
+                  <a href="./reviews/boho-casino.html" class="casino-name"
+                    >Boho Casino</a
+                  >
                   <span class="casino-feature">Fast processing</span>
                 </div>
               </li>
@@ -600,26 +625,34 @@
               <h3><span class="category-icon">🎁</span> No Deposit Bonuses</h3>
               <div class="category-badge">Top 5</div>
             </div>
-            <p class="category-description">Free money to try casinos risk-free</p>
+            <p class="category-description">
+              Free money to try casinos risk-free
+            </p>
             <ul class="casino-list">
               <li class="casino-item">
                 <span class="rank">#1</span>
                 <div class="casino-info">
-                  <a href="./reviews/betmgm-casino.html" class="casino-name">BetMGM Casino</a>
+                  <a href="./reviews/betmgm-casino.html" class="casino-name"
+                    >BetMGM Casino</a
+                  >
                   <span class="casino-feature">$25 FREE</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#2</span>
                 <div class="casino-info">
-                  <a href="./bonuses/index.html" class="casino-name">Caesars Palace</a>
+                  <a href="./bonuses/index.html" class="casino-name"
+                    >Caesars Palace</a
+                  >
                   <span class="casino-feature">$10 FREE</span>
                 </div>
               </li>
               <li class="casino-item">
                 <span class="rank">#3</span>
                 <div class="casino-info">
-                  <a href="./bonuses/index.html" class="casino-name">BetRivers</a>
+                  <a href="./bonuses/index.html" class="casino-name"
+                    >BetRivers</a
+                  >
                   <span class="casino-feature">$250 FREE</span>
                 </div>
               </li>
@@ -633,7 +666,9 @@
               <li class="casino-item">
                 <span class="rank">#5</span>
                 <div class="casino-info">
-                  <a href="./bonuses/index.html" class="casino-name">Golden Nugget</a>
+                  <a href="./bonuses/index.html" class="casino-name"
+                    >Golden Nugget</a
+                  >
                   <span class="casino-feature">$200 FREE</span>
                 </div>
               </li>
@@ -747,7 +782,8 @@
       <div class="container">
         <h2 class="section-title">Hottest Fresh News</h2>
         <p class="section-subtitle">
-          Stay updated with the latest casino bonuses, gambling trends, and winning strategies
+          Stay updated with the latest casino bonuses, gambling trends, and
+          winning strategies
         </p>
 
         <div class="news-container">
@@ -762,7 +798,8 @@
               </div>
               <div class="news-content">
                 <h3 class="news-title">
-                  Instant USDT Casinos: Fast, Secure Gaming with the Hottest Slots in March at MyHotSlots.com
+                  Instant USDT Casinos: Fast, Secure Gaming with the Hottest
+                  Slots in March at MyHotSlots.com
                 </h3>
                 <time class="news-date" datetime="2026-03">March 2026</time>
               </div>
@@ -798,7 +835,9 @@
                 />
               </div>
               <div class="news-content">
-                <h3 class="news-title">The Need for Speed: Why Fast 24-Hour Payouts Matter</h3>
+                <h3 class="news-title">
+                  The Need for Speed: Why Fast 24-Hour Payouts Matter
+                </h3>
                 <time class="news-date" datetime="2026-02">February 2026</time>
               </div>
             </a>
@@ -814,7 +853,9 @@
                 />
               </div>
               <div class="news-content">
-                <h3 class="news-title">2026 Slot Gaming Trends You Need to Know</h3>
+                <h3 class="news-title">
+                  2026 Slot Gaming Trends You Need to Know
+                </h3>
                 <time class="news-date" datetime="2026-02">February 2026</time>
               </div>
             </a>
