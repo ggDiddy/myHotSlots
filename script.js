@@ -91,7 +91,7 @@ function initNavigation() {
     if (navbar) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
-                navbar.style.background = '#ffa500)';
+                navbar.style.background = '#ffa500';
             } else {
                 navbar.style.background = 'rgba(39, 64, 70, 0.95)';
             }
@@ -137,14 +137,19 @@ function initSmoothScrolling() {
     
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
             const targetId = this.getAttribute('href');
+
+            if (!targetId || targetId === '#') {
+                e.preventDefault();
+                return;
+            }
+
+            e.preventDefault();
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const offsetTop = targetSection.offsetTop - 80; // Account for fixed navbar
-                
+
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'

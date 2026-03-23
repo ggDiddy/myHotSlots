@@ -71,15 +71,7 @@
       type="application/xml"
       href="https://myhotslots.com/sitemap.xml"
     />
-    <link rel="stylesheet" href="../styles.css" id="main-stylesheet" />
-    <script>
-      // Force CSS reload on page load (prevents caching issues with live server)
-      (function () {
-        var link = document.getElementById("main-stylesheet");
-        var href = link.href.split("?")[0];
-        link.href = href + "?v=" + new Date().getTime();
-      })();
-    </script>
+    <link rel="stylesheet" href="../styles.css?v=20260323" id="main-stylesheet" />
   </head>
   <body>
     <!-- Navigation -->
