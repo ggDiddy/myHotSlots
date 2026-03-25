@@ -51,10 +51,9 @@ Disallow: /.git/
 # ===========================================
 # GOOGLE BOT ĪPAŠIE NOTEIKUMI
 # ===========================================
-# Google optimizācija - nav crawl delay
+# Google optimizācija
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 # Googlebot attēliem
 User-agent: Googlebot-Image
@@ -114,7 +113,6 @@ Disallow: /
 # ===========================================
 # Norāda, kur atrodas jūsu XML sitemap faili
 Sitemap: https://myhotslots.com/sitemap.xml
-Sitemap: https://myhotslots.com/sitemap-images.xml
 
 # ===========================================
 # PAPILDU PIEZĪMES
