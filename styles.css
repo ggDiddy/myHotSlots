@@ -1848,3 +1848,423 @@ section {
     background: linear-gradient(90deg, #ff6b6b, #feca57);
     border-radius: 15px 15px 0 0;
 }
+
+/* ============================================ */
+/* AUTHOR SPOTLIGHT (homepage)                  */
+/* ============================================ */
+
+.author-spotlight {
+    background: linear-gradient(135deg, #274046 0%, #1a2e32 100%);
+    padding: 3rem 0;
+    color: #fff;
+}
+
+.author-spotlight-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.author-spotlight-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.8rem;
+    flex-shrink: 0;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.author-spotlight-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author-spotlight-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+.author-spotlight-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #feca57;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.author-spotlight-name {
+    font-size: 1.9rem;
+    margin-bottom: 0.3rem;
+    color: #fff;
+}
+
+.author-spotlight-name a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.author-spotlight-name a:hover {
+    color: #feca57;
+}
+
+.author-spotlight-role {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 1rem;
+}
+
+.author-spotlight-bio {
+    font-size: 0.97rem;
+    line-height: 1.75;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 1.4rem;
+    max-width: 720px;
+}
+
+.author-spotlight-bio strong {
+    color: #feca57;
+}
+
+.author-spotlight-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.author-spotlight-link {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.author-spotlight-link:hover {
+    border-color: #feca57;
+    color: #feca57;
+    background: rgba(254,202,87,0.08);
+}
+
+.author-spotlight-link--primary {
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    border-color: transparent;
+    color: #fff;
+    font-weight: 700;
+}
+
+.author-spotlight-link--primary:hover {
+    opacity: 0.9;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    border-color: transparent;
+}
+
+@media (max-width: 600px) {
+    .author-spotlight-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .author-spotlight-links {
+        justify-content: center;
+    }
+}
+
+/* ============================================ */
+/* AUTHOR PAGE STYLES                           */
+/* ============================================ */
+
+.author-hero {
+    background: linear-gradient(135deg, #e6dada 0%, #274046 100%);
+    padding: 4rem 0 3rem;
+    color: #fff;
+}
+
+.author-hero-inner {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.author-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    overflow: hidden;
+}
+
+.author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.author-hero-info h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+    color: #fff;
+}
+
+.author-role {
+    font-size: 1rem;
+    color: #feca57;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.author-meta-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+}
+
+.author-meta-row span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.author-intro {
+    background: linear-gradient(135deg, #f9f6f6 0%, #e8f0f2 100%);
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, #ff6b6b, #feca57) 1;
+    padding: 2.5rem 0;
+}
+
+.author-intro-inner {
+    max-width: 860px;
+}
+
+.author-intro-inner p {
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+.author-intro-inner p:last-child {
+    margin-bottom: 0;
+}
+
+.author-intro-inner strong {
+    color: #274046;
+}
+
+.author-intro-stat {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    color: #fff;
+    font-weight: 700;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.author-body {
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.author-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.author-bio-section {
+    margin-bottom: 2.5rem;
+}
+
+.author-bio-section h2,
+.author-articles-section h2 {
+    font-size: 1.5rem;
+    color: #274046;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.author-bio-section h2 {
+    border-bottom: 3px solid #ff6b6b;
+}
+
+.author-articles-section h2 {
+    border-bottom: 3px solid #feca57;
+}
+
+.author-bio-section h2.spaced {
+    margin-top: 2rem;
+}
+
+.author-bio-section p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+
+.author-expertise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.6rem;
+}
+
+.author-expertise-list li {
+    background: #f8f9fa;
+    border-left: 3px solid #ff6b6b;
+    padding: 0.5rem 0.8rem;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.92rem;
+    color: #274046;
+}
+
+.author-article-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.author-sidebar-card.cta-card {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.author-sidebar-cta-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.9rem;
+}
+
+.author-article-card:hover {
+    border-color: #ff6b6b;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.15);
+    transform: translateY(-2px);
+}
+
+.article-card-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.article-card-info h4 {
+    font-size: 0.98rem;
+    color: #274046;
+    margin-bottom: 0.25rem;
+}
+
+.article-card-info p {
+    font-size: 0.82rem;
+    color: #888;
+    margin: 0;
+}
+
+.author-sidebar-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e9ecef;
+}
+
+.author-sidebar-card h3 {
+    font-size: 1rem;
+    color: #274046;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.author-stat-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.88rem;
+}
+
+.author-stat-row:last-child {
+    border-bottom: none;
+}
+
+.author-stat-label {
+    color: #666;
+}
+
+.author-stat-value {
+    font-weight: 600;
+    color: #274046;
+}
+
+.author-trust-badge {
+    background: linear-gradient(135deg, #274046, #3d5a61);
+    color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.author-trust-badge h3 {
+    color: #feca57;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.author-trust-badge p {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .author-layout {
+        grid-template-columns: 1fr;
+    }
+    .author-expertise-list {
+        grid-template-columns: 1fr;
+    }
+    .author-hero-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .author-meta-row {
+        justify-content: center;
+    }
+}
