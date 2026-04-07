@@ -38,10 +38,26 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 # 4. TRAILING SLASH NORMALIZĀCIJA
 # ============================================
 # Pievienot trailing slash direktorijām (konsistence)
+# Izņēmums: faili ar .html un clean URL lapas (kurām eksistē .html fails)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
 RewriteCond %{REQUEST_URI} !.*\.html$
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html !-f
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [L,R=301]
+
+# ============================================
+# 4b. CLEAN URL — NOŅEMT .HTML PAPLAŠINĀJUMU
+# ============================================
+# 301 redirect: /lapa.html → /lapa
+RewriteCond %{THE_REQUEST} \s/(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Iekšēji apkalpo .html failu clean URL pieprasījumiem
+# /reviews/betmgm-casino → servē reviews/betmgm-casino.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
 
 # ============================================
 # 5. /INDEX.HTML NOŅEMŠANA
@@ -66,8 +82,8 @@ Redirect 301 /bonuses/free-spins/ https://myhotslots.com/bonuses/
 Redirect 301 /bonuses/free-spins https://myhotslots.com/bonuses/
 
 # Blog vecais URL (tagad ir News)
-Redirect 301 /blog/ https://myhotslots.com/news/news.html
-Redirect 301 /blog https://myhotslots.com/news/news.html
+Redirect 301 /blog/ https://myhotslots.com/news/news
+Redirect 301 /blog https://myhotslots.com/news/news
 
 # Specific bonus kategorijas (ja tādas bija)
 Redirect 301 /bonuses/welcome-bonus/ https://myhotslots.com/bonuses/
